@@ -4,7 +4,7 @@ function showCardExample() {
     var reply = {
         "type": "card",
         "title": "SBER Box",
-        "description": "Компактная ТВ-приставка SBER Box – интеллектуальный центр вашего дома",
+        "description": "Компактная ТВ-приставка SBER Box y4 – интеллектуальный центр вашего дома",
         "imageUrl": "https://content.sberdevices.ru/smartmarket-smide-prod/721/722/ceMB3FIWtGzrqCcA.png", // ссылка на картинку из раздела Контент
         "hash": "4722af39ef07676661755aad21b4845d", // хэш картинки из раздела Контент
         "button": {

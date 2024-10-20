@@ -7,7 +7,6 @@ require: answers.yaml
 init:
     bind("onAnyError", function($context) {
         // выбор формулировки для ошибки, в зависимости от режима тестирования:
-        showCardExample();
         if (!testMode()) {
             log("ERROR! " + $context.exception.message);
             $reactions.answer($Answers.Error);
@@ -25,13 +24,10 @@ theme: /
         q!: Подписка Okko в подарок
         script:
             // Начало новой сессии: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/built_in_services/jsapi/startSession
-            // if ($parseTree.value === "start") { $jsapi.startSession() };
-            $jsapi.startSession();
-            showCardExample();
+            if ($parseTree.value === "start") { $jsapi.startSession() };
             // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session
             $session.character = getCharacterId($request);
             // реплика из answers.yaml, в зависимости от персонажа:
-            
             $reactions.answer($Answers["Start"][$session.character]);
         buttons:
             "Обычная"
@@ -88,7 +84,6 @@ theme: /
         event!: noMatch
         script:
             // реплика из answers.yaml, в зависимости от персонажа:
-            $reactions.answer($Answers.CatchAll[$session.character]);
             $reactions.answer($Answers.CatchAll[$session.character]);
         buttons:
             "Обычная"

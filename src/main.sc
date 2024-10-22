@@ -26,5 +26,7 @@ theme: /
             // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session
             $session.character = getCharacterId($request);
             toPrettyString($request)
+            toPrettyString($injector)
+            toPrettyString($context)
             // реплика из answers.yaml, в зависимости от персонажа:
             showCardListExample();

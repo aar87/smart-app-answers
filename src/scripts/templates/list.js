@@ -34,7 +34,7 @@ function getCell(value, isLast) {
 		right: {
 			type: "media_gallery_item",
 			"image": {
-				"url": "https://salute-content.sberdevices.ru/ims/prod/cda84eb4-0070-490e-ae77-dfeda38f4c26.webp",
+				"url": "https://cdn.sberdevices.ru/static/services/target/ddfde726-4ec5-4eb1-a303-bc5f22c90331/99d9f6bd-8216-4bb0-880f-b5b3be7c5c5f.png",
 				"hash": "string",
 				"placeholder": "string",
 				"scale_mode": "scale_aspect_fill",

@@ -18,6 +18,7 @@ init:
 theme: /
 
     state: Start
+        q!: * (Как перезапустить устройство) *
         script:
             // Начало новой сессии: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/built_in_services/jsapi/startSession
             if ($parseTree.value === "start") { $jsapi.startSession() };

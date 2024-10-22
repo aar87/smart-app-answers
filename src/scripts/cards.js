@@ -1,5 +1,5 @@
 function showCardExample() {
-    // https://developer.sberdevices.ru/docs/ru/developer_tools/ide/bot_answers/message_types#card
+    // https://developers.sber.ru/docs/ru/developer_tools/ide/bot_answers/message_types#card
     // описываем поля карточки типа card:
     var reply = {
         "type": "card",
@@ -202,36 +202,35 @@ function showCardListExample() {
     // описываем поля карточки типа cardList:
     var reply = {
         "type": "cardList",
-        "title": "SberDevices",
-        "subtitle": "B2B- и B2C-девайсы для экосистемы с применением речевых технологий и виртуальным ассистентом на борту",
+        // "title": "SberDevices",
+        // "subtitle": "B2B- и B2C-девайсы для экосистемы с применением речевых технологий и виртуальным ассистентом на борту",
         "cells": [
             {
-                "title": "Подписка Okko в подарок",
-                "subtitle": "Компактная ТВ-приставка SBER Box – интеллектуальный центр вашего дома",
-                "value": " SBER Box",
-                "iconUrl": "https://content.sberdevices.ru/smartmarket-smide-prod/721/722/ceMB3FIWtGzrqCcA.png", //ссылка на картинку из раздела Контент
-                "hash": "4722af39ef07676661755aad21b4845d", // хэш картинки из раздела Контент
-                "action": {
-                    "url": "https://sbershop.ru/catalog/gadzhety/pristavka_tv_sber_box_model_sbdv_00001/"
-                }
+                // "title": "Подписка Okko в подарок",
+                "subtitle": "На пульте нажмите и держите кнопку выключения. Через несколько секунд на телевизоре отобразиться строка Перезапустить",
+                // "iconUrl": "https://content.sberdevices.ru/smartmarket-smide-prod/721/722/ceMB3FIWtGzrqCcA.png", //ссылка на картинку из раздела Контент
+                // "hash": "4722af39ef07676661755aad21b4845d", // хэш картинки из раздела Контент
+                // "action": {
+                //     "url": "https://sbershop.ru/catalog/gadzhety/pristavka_tv_sber_box_model_sbdv_00001/"
+                // }
             },
             {
-                "title": "Смарт-дисплей с премиальной акустикой и функцией видеозвонков",
-                "subtitle": "SberPortal",
-                "value": "Чистый звук 360°",
-                "iconUrl": "https://content.sberdevices.ru/smartmarket-smide-prod/721/722/Acsds6uYKcz7GqKm.png", //ссылка на картинку из раздела Контент
-                "hash": "ca727c229f81db99ab6250056dba1559", // хэш картинки из раздела Контент
-                "action": {
-                    "url": "https://sbershop.ru/catalog/gadzhety/pristavka_tv_sber_box_model_sbdv_00001/"
-                }
+                // "title": "Смарт-дисплей с премиальной акустикой и функцией видеозвонков",
+                "subtitle": "Нажмите на кнопку ОК",
+                // "value": "Чистый звук 360°",
+                // "iconUrl": "https://content.sberdevices.ru/smartmarket-smide-prod/721/722/Acsds6uYKcz7GqKm.png", //ссылка на картинку из раздела Контент
+                // "hash": "ca727c229f81db99ab6250056dba1559", // хэш картинки из раздела Контент
+                // "action": {
+                //     "url": "https://sbershop.ru/catalog/gadzhety/pristavka_tv_sber_box_model_sbdv_00001/"
+                // }
             }
         ],
-        "buttons": [
-            {
-                "text": "Купить",
-                "url": "https://sbershop.ru/"
-            }],
-        "auto_listening": false
+        // "buttons": [
+        //     {
+        //         "text": "Купить",
+        //         "url": "https://sbershop.ru/"
+        //     }],
+        "auto_listening": true
     };
 
     // отправляем карточку в ответ от бота:

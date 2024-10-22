@@ -4,6 +4,9 @@ require: scripts/cards.js
 require: answers.yaml
   var = $Answers
 
+require: content.yaml
+  var = $Content
+
 init:
     bind("onAnyError", function($context) {
         // выбор формулировки для ошибки, в зависимости от режима тестирования:
@@ -28,5 +31,6 @@ theme: /
             toPrettyString("request -> " + $request)
             toPrettyString("injector -> " + $injector)
             toPrettyString("context -> " + $context)
+            toPrettyString("context -> " + $Content)
             // реплика из answers.yaml, в зависимости от персонажа:
             showCardListExample();

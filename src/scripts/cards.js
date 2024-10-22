@@ -202,27 +202,27 @@ function showCardListExample() {
     // описываем поля карточки типа cardList:
     var reply = {
         "type": "cardList",
-        // "title": "SberDevices",
-        // "subtitle": "B2B- и B2C-девайсы для экосистемы с применением речевых технологий и виртуальным ассистентом на борту",
+        "title": "",
+        "subtitle": "",
         "cells": [
             {
-                // "title": "Подписка Okko в подарок",
-                "subtitle": "На пульте нажмите и держите кнопку выключения. Через несколько секунд на телевизоре отобразиться строка Перезапустить",
-                // "iconUrl": "https://content.sberdevices.ru/smartmarket-smide-prod/721/722/ceMB3FIWtGzrqCcA.png", //ссылка на картинку из раздела Контент
-                // "hash": "4722af39ef07676661755aad21b4845d", // хэш картинки из раздела Контент
-                // "action": {
-                //     "url": "https://sbershop.ru/catalog/gadzhety/pristavka_tv_sber_box_model_sbdv_00001/"
-                // }
+                "title": "",
+                "subtitle": "",
+                "iconUrl": "",
+                "hash": "4722af39ef07676661755aad21b4845d", // хэш картинки из раздела Контент
+                "action": {
+                    "url": ""
+                }
             },
             {
-                // "title": "Смарт-дисплей с премиальной акустикой и функцией видеозвонков",
+                "title": "",
                 "subtitle": "Нажмите на кнопку ОК",
-                // "value": "Чистый звук 360°",
-                // "iconUrl": "https://content.sberdevices.ru/smartmarket-smide-prod/721/722/Acsds6uYKcz7GqKm.png", //ссылка на картинку из раздела Контент
-                // "hash": "ca727c229f81db99ab6250056dba1559", // хэш картинки из раздела Контент
-                // "action": {
-                //     "url": "https://sbershop.ru/catalog/gadzhety/pristavka_tv_sber_box_model_sbdv_00001/"
-                // }
+                "value": "",
+                "iconUrl": "", //ссылка на картинку из раздела Контент
+                "hash": "ca727c229f81db99ab6250056dba1559", // хэш картинки из раздела Контент
+                "action": {
+                    "url": ""
+                }
             }
         ],
         // "buttons": [

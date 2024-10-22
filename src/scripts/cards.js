@@ -200,7 +200,7 @@ function showGalleryCardExample($request) {
 function showCardListExample() {
     // https://developer.sberdevices.ru/docs/ru/developer_tools/ide/bot_answers/message_types#card-list
     // описываем поля карточки типа cardList:
-    var reply = [
+    var cards = [
         {
             "card": {
                 "type": "list_card",
@@ -294,6 +294,14 @@ function showCardListExample() {
         }
     ]
 
+    var reply = {
+        "type": "raw",
+        "body": {
+            "emotion": null,
+            "items": cards,
+        },
+        "messageName": "ANSWER_TO_USER"
+    }
 
     // отправляем карточку в ответ от бота:
     answerPush(reply);

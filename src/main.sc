@@ -33,6 +33,9 @@ theme: /
             $jsapi.log("injector -> \n" + toPrettyString($injector));
             $jsapi.log("context -> \n" + toPrettyString($context));
             $jsapi.log("context -> \n" + toPrettyString($Content));
+
+            $jsapi.log("context -> \n" + toPrettyString($Content.First));
+            $jsapi.log("context -> \n" + toPrettyString($Content.First.Items));
             // реплика из answers.yaml, в зависимости от персонажа:
 
             reply(getListTemplate($Content.First.Items);

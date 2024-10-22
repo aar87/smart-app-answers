@@ -221,7 +221,7 @@ function showCardListExample() {
                             "type": "simple_left_view",
                             "texts": {
                                 "title": {
-                                    "text": "",
+                                    "text": "1. На пульте нажмите и держите кнопку выключения. Через несколько секунд на телевизоре отобразится строка Перезапустить",
                                     "typeface": "footnote1",
                                     "text_color": "secondary",
                                     "max_lines": 0

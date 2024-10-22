@@ -38,4 +38,8 @@ theme: /
             $jsapi.log("context -> \n" + toPrettyString($Content.First.Items));
             // реплика из answers.yaml, в зависимости от персонажа:
 
-            // reply(getListTemplate($Content.First);
+
+            var items = $Content.First.Items;
+
+
+            reply(getListTemplate(items);

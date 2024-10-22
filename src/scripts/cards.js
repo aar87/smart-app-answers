@@ -212,38 +212,6 @@ function showCardListExample() {
                     {
                         "type": "left_right_cell_view",
                         "paddings": {
-                            "left": "8x",
-                            "right": "8x",
-                            "top": "6x",
-                            "bottom": "6x"
-                        },
-                        "left": {
-                            "type": "simple_left_view",
-                            "texts": {
-                                "title": {
-                                    "text": "Платежная система",
-                                    "typeface": "footnote1",
-                                    "text_color": "secondary",
-                                    "max_lines": 0
-                                },
-                                "subtitle": {
-                                    "text": "Visa",
-                                    "typeface": "body1",
-                                    "text_color": "default",
-                                    "margins": {
-                                        "top": "1x"
-                                    }
-                                }
-                            }
-                        },
-                        "divider": {
-                            "style": "default",
-                            "size": "d5"
-                        }
-                    },
-                    {
-                        "type": "left_right_cell_view",
-                        "paddings": {
                             "top": "6x",
                             "bottom": "6x",
                             "left": "8x",
@@ -253,7 +221,7 @@ function showCardListExample() {
                             "type": "simple_left_view",
                             "texts": {
                                 "title": {
-                                    "text": "Описание 1",
+                                    "text": "1. На пульте нажмите и держите кнопку выключения. Через несколько секунд на телевизоре отобразится строка Перезапустить",
                                     "typeface": "footnote1",
                                     "text_color": "secondary",
                                     "max_lines": 0
@@ -277,7 +245,7 @@ function showCardListExample() {
                             "type": "simple_left_view",
                             "texts": {
                                 "title": {
-                                    "text": "Описание 2",
+                                    "text": "2. Нажмите кнопку ОК",
                                     "typeface": "footnote1",
                                     "text_color": "secondary",
                                     "max_lines": 0

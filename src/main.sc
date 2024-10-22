@@ -42,4 +42,4 @@ theme: /
             var items = $Content.First.Items;
 
 
-            reply(getListTemplate(items);
+            reply(getListTemplate(items));

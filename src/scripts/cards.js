@@ -225,11 +225,11 @@ function showCardListExample() {
                 }
             }
         ],
-        // "buttons": [
-        //     {
-        //         "text": "Купить",
-        //         "url": "https://sbershop.ru/"
-        //     }],
+        "buttons": [
+            {
+                "text": "Купить",
+                "url": "https://sbershop.ru/"
+            }],
         "auto_listening": true
     };
 

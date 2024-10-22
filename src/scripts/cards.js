@@ -220,8 +220,14 @@ function showCardListExample() {
                         "left": {
                             "type": "simple_left_view",
                             "texts": {
+                                "title": {
+                                    "text": "",
+                                    "typeface": "footnote1",
+                                    "text_color": "secondary",
+                                    "max_lines": 0
+                                },
                                 "subtitle": {
-                                    "text": "1. На пульте нажмите и держите кнопку выключения. Через несколько секунд на телевизоре отобразится строка Перезапустить",
+                                    "text": "",
                                     "typeface": "body1",
                                     "text_color": "secondary",
                                     "margins": {
@@ -252,6 +258,14 @@ function showCardListExample() {
                                     "text_color": "secondary",
                                     "max_lines": 0
                                 },
+                                "subtitle": {
+                                    "text": "",
+                                    "typeface": "body1",
+                                    "text_color": "secondary",
+                                    "margins": {
+                                        "top": "1x"
+                                    }
+                                }
                             }
                         },
                     },

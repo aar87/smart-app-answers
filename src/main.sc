@@ -18,7 +18,8 @@ init:
 theme: /
 
     state: Start
-        q!: * *start
+        q!: *
+        a: Начинаем работу!
         script:
             // Начало новой сессии: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/built_in_services/jsapi/startSession
             if ($parseTree.value === "start") { $jsapi.startSession() };

@@ -55,7 +55,7 @@ theme: /
         go!: /Start
         
     state: cardList
-        q!: * (cardList/list/лист/список/списки) *
+        q!: * (cardList/list/лист/список/списки/Как перезапустить устройство) *
         script:
             showCardListExample();
         go!: /Start

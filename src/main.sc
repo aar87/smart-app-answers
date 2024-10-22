@@ -28,9 +28,9 @@ theme: /
             if ($parseTree.value === "start") { $jsapi.startSession() };
             // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session
             $session.character = getCharacterId($request);
-            $jsapi.log("request -> " + toPrettyString($request)
-            $jsapi.log("injector -> " + toPrettyString($injector)
-            $jsapi.log("context -> " + toPrettyString($context)
-            $jsapi.log("context -> " + toPrettyString($Content)
+            $jsapi.log("request -> \n" + toPrettyString($request));
+            $jsapi.log("injector -> \n" + toPrettyString($injector));
+            $jsapi.log("context -> \n" + toPrettyString($context));
+            $jsapi.log("context -> \n" + toPrettyString($Content));
             // реплика из answers.yaml, в зависимости от персонажа:
             showCardListExample();

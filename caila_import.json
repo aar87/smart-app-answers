@@ -1,18 +1,19 @@
 {
   "project" : {
-    "id" : "shablon_kartochki",
-    "name" : "shablon_kartochki",
-    "folder" : "/"
+    "id" : "smart_app_answers-1334030-vIS",
+    "name" : "smart_app_answers-1334030-vIS",
+    "folder" : "/jaicp"
   },
   "settings" : {
     "language" : "ru",
     "spellingCorrection" : false,
     "classificationAlgorithm" : "sts",
     "timezone" : "UTC",
-    "shared" : false,
-    "extendedSettings": {
-      "tokenizerEngine": "default"
-    }
+    "extendedSettings" : {
+      "tokenizerEngine" : "default"
+    },
+    "businessShared" : false,
+    "business" : false
   },
   "intents" : [ ],
   "entities" : [ ],

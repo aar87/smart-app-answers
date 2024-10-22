@@ -238,7 +238,13 @@ function showCardListExample() {
                         },
                         "divider": {
                             "style": "default",
-                            "size": "d5"
+                            "size": "d5",
+                            "margins": {
+                                "top": "0x",
+                                "bottom": "0x",
+                                "left": "0x",
+                                "right": "0x"
+                            }
                         }
                     },
                     {

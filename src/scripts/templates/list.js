@@ -16,7 +16,7 @@ function getCell(value, isLast) {
 			type: "simple_left_view",
 			texts: {
 				title: {
-					text: `${value}`,
+					text: value,
 					typeface: "footnote1",
 					text_color: "secondary",
 					max_lines: 0

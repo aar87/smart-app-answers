@@ -200,38 +200,100 @@ function showGalleryCardExample($request) {
 function showCardListExample() {
     // https://developer.sberdevices.ru/docs/ru/developer_tools/ide/bot_answers/message_types#card-list
     // описываем поля карточки типа cardList:
-    var reply = {
-        "type": "cardList",
-        // "title": "SberDevices",
-        // "subtitle": "B2B- и B2C-девайсы для экосистемы с применением речевых технологий и виртуальным ассистентом на борту",
-        "cells": [
-            {
-                // "title": "Подписка Okko в подарок",
-                "subtitle": "На пульте нажмите и держите кнопку выключения. Через несколько секунд на телевизоре отобразиться строка Перезапустить",
-                // "iconUrl": "https://content.sberdevices.ru/smartmarket-smide-prod/721/722/ceMB3FIWtGzrqCcA.png", //ссылка на картинку из раздела Контент
-                // "hash": "4722af39ef07676661755aad21b4845d", // хэш картинки из раздела Контент
-                // "action": {
-                //     "url": "https://sbershop.ru/catalog/gadzhety/pristavka_tv_sber_box_model_sbdv_00001/"
-                // }
-            },
-            {
-                // "title": "Смарт-дисплей с премиальной акустикой и функцией видеозвонков",
-                "subtitle": "Нажмите на кнопку ОК",
-                // "value": "Чистый звук 360°",
-                // "iconUrl": "https://content.sberdevices.ru/smartmarket-smide-prod/721/722/Acsds6uYKcz7GqKm.png", //ссылка на картинку из раздела Контент
-                // "hash": "ca727c229f81db99ab6250056dba1559", // хэш картинки из раздела Контент
-                // "action": {
-                //     "url": "https://sbershop.ru/catalog/gadzhety/pristavka_tv_sber_box_model_sbdv_00001/"
-                // }
+    var reply = [
+        {
+            "card": {
+                "type": "list_card",
+                "paddings": {
+                    "bottom": "8x",
+                    "top": "8x"
+                },
+                "cells": [
+                    {
+                        "type": "left_right_cell_view",
+                        "paddings": {
+                            "left": "8x",
+                            "right": "8x",
+                            "top": "6x",
+                            "bottom": "6x"
+                        },
+                        "left": {
+                            "type": "simple_left_view",
+                            "texts": {
+                                "title": {
+                                    "text": "Платежная система",
+                                    "typeface": "footnote1",
+                                    "text_color": "secondary",
+                                    "max_lines": 0
+                                },
+                                "subtitle": {
+                                    "text": "Visa",
+                                    "typeface": "body1",
+                                    "text_color": "default",
+                                    "margins": {
+                                        "top": "1x"
+                                    }
+                                }
+                            }
+                        },
+                        "divider": {
+                            "style": "default",
+                            "size": "d5"
+                        }
+                    },
+                    {
+                        "type": "left_right_cell_view",
+                        "paddings": {
+                            "top": "6x",
+                            "bottom": "6x",
+                            "left": "8x",
+                            "right": "8x"
+                        },
+                        "left": {
+                            "type": "simple_left_view",
+                            "texts": {
+                                "title": {
+                                    "text": "Описание 1",
+                                    "typeface": "footnote1",
+                                    "text_color": "secondary",
+                                    "max_lines": 0
+                                },
+                            }
+                        },
+                        "divider": {
+                            "style": "default",
+                            "size": "d5"
+                        }
+                    },
+                    {
+                        "type": "left_right_cell_view",
+                        "paddings": {
+                            "top": "6x",
+                            "bottom": "6x",
+                            "left": "8x",
+                            "right": "8x"
+                        },
+                        "left": {
+                            "type": "simple_left_view",
+                            "texts": {
+                                "title": {
+                                    "text": "Описание 2",
+                                    "typeface": "footnote1",
+                                    "text_color": "secondary",
+                                    "max_lines": 0
+                                },
+                            }
+                        },
+                        "divider": {
+                            "style": "default",
+                            "size": "d5"
+                        }
+                    },
+                ]
             }
-        ],
-        "buttons": [
-            {
-                "text": "Купить",
-                "url": "https://sbershop.ru/"
-            }],
-        "auto_listening": true
-    };
+        }
+    ]
+
 
     // отправляем карточку в ответ от бота:
     answerPush(reply);

@@ -27,3 +27,17 @@ function getCharacterId($request) {
         throw e.message;
     }
 }
+
+function reply(data) {
+    var reply = {
+        "type": "raw",
+        "body": {
+            "emotion": null,
+            "items": data,
+        },
+        "messageName": "ANSWER_TO_USER"
+    }
+
+    // отправляем карточку в ответ от бота:
+    answerPush(reply);
+}

@@ -1,5 +1,6 @@
 require: scripts/scripts.js
 require: scripts/cards.js
+require: scripts/templates/list.js
 
 require: answers.yaml
   var = $Answers
@@ -33,4 +34,4 @@ theme: /
             $jsapi.log("context -> \n" + toPrettyString($context));
             $jsapi.log("context -> \n" + toPrettyString($Content));
             // реплика из answers.yaml, в зависимости от персонажа:
-            showCardListExample();
+            reply(getListTemplate($Content["first"]["items"]);

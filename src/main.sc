@@ -41,9 +41,7 @@ theme: /
         q!: *
         a: Начинаем работу!
         go!: /Start/Question?
-
             state: Question?
-
                 state: Да
                     q: * да *
                     go!: /Reload

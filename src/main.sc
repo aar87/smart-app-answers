@@ -77,4 +77,4 @@ theme: /
 
     state: CatchAll || noContext=true
         q: *
-        a: Я не понял
+        a: Я не понял вас

@@ -40,14 +40,13 @@ theme: /
     state: Start
         q!: *
         a: Начинаем работу!
-        go!: /Start/Question?
-            state: Question?
-                state: Да
-                    q: * да *
-                    go!: /Reload
-                state: Нет
-                    q: * нет *
-                    a: ** Ну и ладно **
+        state: Question?
+            state: Да
+                q: * да *
+                go!: /Reload
+            state: Нет
+                q: * нет *
+                a: ** Ну и ладно **
 
     state: Reload
         script:

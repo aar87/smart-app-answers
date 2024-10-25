@@ -39,7 +39,7 @@ theme: /
 
     state: Start
         q!: *
-        a: Начинаем работу!
+        a: Начинаем работу?
         state: Question?
             state: Да
                 q: * да *

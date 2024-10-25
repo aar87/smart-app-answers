@@ -42,16 +42,13 @@ theme: /
         a: Начинаем работу?
         state: Да
             q: * да *
-            go!: /Reload
+            script:
+                $jsapi.log("ReloadStateInit");
+                var items = $Content.First.Items;
+                reply(getListTemplate(items));
         state: Нет
             q: * нет *
             a: ** Ну и ладно **
-
-    state: Reload
-        script:
-            $jsapi.log("ReloadStateInit");
-            var items = $Content.First.Items;
-            reply(getListTemplate(items));
 
     state: CatchAll || noContext=true
         q: *

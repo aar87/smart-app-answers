@@ -46,7 +46,7 @@ theme: /
 
                 state: Да
                     q: * да *
-                    go: /Reload
+                    go!: /Reload
                 state: Нет
                     q: * нет *
                     a: ** Ну и ладно **

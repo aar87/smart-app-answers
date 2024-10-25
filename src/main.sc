@@ -54,7 +54,7 @@ theme: /
 
     state: DeviceReload
         q!: (как перезагру*|перезагруз*|перезапус*)
-        a: Хорошо
+        a: $Content.DeviceReload.title
         script:
             var items = $Content.DeviceReload.details.items;
             $jsapi.log("DeviceReload -> " + toPrettyString(items));
@@ -65,7 +65,7 @@ theme: /
 
     state: VideoFromPhone
         q!: (как транслировать*|видео с телефона*|видео на телефоне*)
-        a: Хорошо
+        a: $Content.VideoFromPhone.title
         script:
             var items = $Content.VideoFromPhone.details.items;
             $jsapi.log("VideoFromPhone -> " + toPrettyString(items));

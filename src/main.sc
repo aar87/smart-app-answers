@@ -40,22 +40,23 @@ theme: /
     state: Start
         q!: *
         a: Начинаем работу!
+        go!: /Start/Question?
+
+            state: Question?
+
+                state: Да
+                    q: * да *
+                    go: /Reload
+                state: Нет
+                    q: * нет *
+                    a: ** Ну и ладно **
+
+    state: Reload
         script:
-            // Начало новой сессии: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/built_in_services/jsapi/startSession
-            if ($parseTree.value === "start") { $jsapi.startSession() };
-            // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session
-            $session.character = getCharacterId($request);
-            $jsapi.log("request -> \n" + toPrettyString($request));
-            $jsapi.log("injector -> \n" + toPrettyString($injector));
-            $jsapi.log("context -> \n" + toPrettyString($context));
-            $jsapi.log("context -> \n" + toPrettyString($Content));
-
-            $jsapi.log("context -> \n" + toPrettyString($Content.First));
-            $jsapi.log("context -> \n" + toPrettyString($Content.First.Items));
-            // реплика из answers.yaml, в зависимости от персонажа:
-
-
+            $jsapi.log("ReloadStateInit");
             var items = $Content.First.Items;
-
-
             reply(getListTemplate(items));
+
+    state: CatchAll || noContext=true
+        q: *
+        a: Я не понял

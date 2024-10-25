@@ -39,6 +39,9 @@ theme: /
 
     state: Start
         q!: *
+        buttons:
+            "Как перезапустить устройство?" -> /DeviceReload
+            "Как транслировать видео с телефона?" -> /VideoFromPhone
         script:
             if ($parseTree.value === "start") { $jsapi.startSession() };
             // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session

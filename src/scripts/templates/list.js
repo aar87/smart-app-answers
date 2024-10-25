@@ -31,19 +31,6 @@ function getCell(value, isLast) {
 				}
 			}
 		},
-		right: {
-			type: "media_gallery_item",
-			"image": {
-				"url": "https://cdn.sberdevices.ru/static/services/target/ddfde726-4ec5-4eb1-a303-bc5f22c90331/99d9f6bd-8216-4bb0-880f-b5b3be7c5c5f.png",
-				"hash": "string",
-				"placeholder": "string",
-				"scale_mode": "scale_aspect_fill",
-				"height": 100,
-				"placeholder_color": "solid_black",
-				"actions": [],
-				"size": {}
-			},
-		},
 	}
 
 	if (!isLast) {

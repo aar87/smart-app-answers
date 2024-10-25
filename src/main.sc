@@ -18,6 +18,22 @@ init:
             throw "ERROR! " + $context.exception.message;
         }
     });
+    bind("preProcess", function($context) {
+        $jsapi.log(">> pre >> " + $context.currentState);
+
+        if (
+            $context.currentState != "/Repeat" &&
+            $context.currentState != "/Back" &&
+            $context.currentState != "/Fallback" &&
+            !$context.session.returned
+        ) {
+            $jsapi.log(">>> pre");
+            $context.session.returned = false
+            $context.session.lastState = $context.session.currentState
+            $context.session.currentState = $context.currentState
+        }
+    }, "/");
+
 
 theme: /
 

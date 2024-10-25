@@ -45,7 +45,10 @@ theme: /
             script:
                 $jsapi.log("ReloadStateInit");
                 var items = $Content.First.Items;
-                reply(getListTemplate(items));
+                $jsapi.log("Items -> " + toPrettyString(items));
+                var template = getListTemplate(items);
+                $jsapi.log("Template -> " + toPrettyString(template));
+                reply(template);
         state: Нет
             q: * нет *
             a: ** Ну и ладно **

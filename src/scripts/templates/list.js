@@ -30,7 +30,7 @@ function getCell(value, isLast) {
 					}
 				}
 			}
-		},
+		}
 	}
 
 	if (!isLast) {

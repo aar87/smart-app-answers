@@ -43,7 +43,7 @@ theme: /
 
         state: Да
             q: (спутник*|кабель*|эфир*)
-            a: Хорошо
+            a: Показываю
             script:
                 if ($parseTree.value === "start") { $jsapi.startSession() };
                 // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session
@@ -58,8 +58,8 @@ theme: /
                 var template = getListTemplate(items);
                 $jsapi.log("Template -> " + toPrettyString(template));
                 reply(template);
-        state: Нет
-            q: * нет *
+        state: Онлайн
+            q: * Онлайн *
             a: ** Ну и ладно **
 
     state: CatchAll || noContext=true

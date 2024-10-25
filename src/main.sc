@@ -61,6 +61,7 @@ theme: /
             var template = getListTemplate(items);
             $jsapi.log("DeviceReload -> " + toPrettyString(template));
             reply(template);
+            $reactions.transition("/Start")
 
     state: VideoFromPhone
         q!: (как транслировать*|видео с телефона*|видео на телефоне*)
@@ -71,6 +72,7 @@ theme: /
             var template = getListTemplate(items);
             $jsapi.log("VideoFromPhone -> " + toPrettyString(template));
             reply(template);
+            $reactions.transition("/Start")
 
     state: CatchAll || noContext=true
         q: *

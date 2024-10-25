@@ -39,8 +39,7 @@ theme: /
 
     state: Start
         q!: *
-        a: Уточните, настройки каких каналов вас интересуют?
-
+        a: Добро пожаловать в сервисные ответы. Какой вопрос вас интересует?
         state: Да
             q: (спутник*|кабель*|эфир*)
             a: Показываю
@@ -53,14 +52,28 @@ theme: /
                 $jsapi.log("context -> \n" + toPrettyString($context));
                 $jsapi.log("context -> \n" + toPrettyString($Content));
                 $jsapi.log("ReloadStateInit");
-                var items = $Content.Channel.Items;
-                $jsapi.log("Items -> " + toPrettyString(items));
-                var template = getListTemplate(items);
-                $jsapi.log("Template -> " + toPrettyString(template));
-                reply(template);
         state: Онлайн
             q: * Онлайн *
             a: ** Ну и ладно **
+
+
+    state: DeviceReload
+        q!: (как перезагру*|перезагруз*|перезапус*)
+        script:
+            var items = $Content.DeviceReload.details.items;
+            $jsapi.log("DeviceReload -> " + toPrettyString(items));
+            var template = getListTemplate(items);
+            $jsapi.log("DeviceReload -> " + toPrettyString(template));
+            reply(template);
+
+    state: VideoFromPhone
+        q!: (как транслировать*|видео с телефона*|видео на телефоне*)
+        script:
+            var items = $Content.VideoFromPhone.details.items;
+            $jsapi.log("VideoFromPhone -> " + toPrettyString(items));
+            var template = getListTemplate(items);
+            $jsapi.log("VideoFromPhone -> " + toPrettyString(template));
+            reply(template);
 
     state: CatchAll || noContext=true
         q: *

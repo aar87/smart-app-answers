@@ -43,6 +43,7 @@ theme: /
         state: Да
             q: * да *
             script:
+                $jsapi.startSession();
                 $jsapi.log("ReloadStateInit");
                 var items = $Content.First.Items;
                 $jsapi.log("Items -> " + toPrettyString(items));

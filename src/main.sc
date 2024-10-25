@@ -39,24 +39,10 @@ theme: /
 
     state: Start
         q!: *
-        a: Начинаем работу?
-        script:
-            if ($parseTree.value === "start") { $jsapi.startSession() };
-            // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session
-            $session.character = getCharacterId($request);
-            $jsapi.log("request -> \n" + toPrettyString($request));
-            $jsapi.log("injector -> \n" + toPrettyString($injector));
-            $jsapi.log("context -> \n" + toPrettyString($context));
-            $jsapi.log("context -> \n" + toPrettyString($Content));
-            $jsapi.log("ReloadStateInit");
-            var items = $Content.First.Items;
-            $jsapi.log("Items -> " + toPrettyString(items));
-            var template = getListTemplate(items);
-            $jsapi.log("Template -> " + toPrettyString(template));
-            reply(template);
+        a: Уточните, настройки каких каналов вас интересуют?
 
         state: Да
-            q: * да *
+            q: (спутник*|кабель*|эфир*)
             a: Хорошо
             script:
                 if ($parseTree.value === "start") { $jsapi.startSession() };
@@ -67,7 +53,7 @@ theme: /
                 $jsapi.log("context -> \n" + toPrettyString($context));
                 $jsapi.log("context -> \n" + toPrettyString($Content));
                 $jsapi.log("ReloadStateInit");
-                var items = $Content.First.Items;
+                var items = $Content.Channel.Items;
                 $jsapi.log("Items -> " + toPrettyString(items));
                 var template = getListTemplate(items);
                 $jsapi.log("Template -> " + toPrettyString(template));

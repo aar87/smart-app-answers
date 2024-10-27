@@ -82,7 +82,7 @@ theme: /
         script:
             var items = $Content.VideoFromPhoneOnTv.details.items;
             var text = $Content.VideoFromPhoneOnTv.details.button.text;
-            var action = $Content.VideoFromPhoneOnTv.details.button.action;
+            var action = $Content.VideoFromPhoneOnTv.details.button.link;
             $jsapi.log("VideoFromPhone -> " + toPrettyString(items));
             $jsapi.log("VideoFromPhone -> " + toPrettyString(text));
             $jsapi.log("VideoFromPhone -> " + toPrettyString(action));

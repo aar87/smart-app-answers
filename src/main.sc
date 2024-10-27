@@ -80,9 +80,9 @@ theme: /
         q!: (транслировать экран*|экран телефон*)
         a: {{ $Content.VideoFromPhoneOnTv.title }}
         script:
-            var items = $Content.VideoFromPhone.details.items;
-            var text = $Content.VideoFromPhone.details.button.text;
-            var action = $Content.VideoFromPhone.details.button.action;
+            var items = $Content.VideoFromPhoneOnTv.details.items;
+            var text = $Content.VideoFromPhoneOnTv.details.button.text;
+            var action = $Content.VideoFromPhoneOnTv.details.button.action;
             $jsapi.log("VideoFromPhone -> " + toPrettyString(items));
             $jsapi.log("VideoFromPhone -> " + toPrettyString(text));
             $jsapi.log("VideoFromPhone -> " + toPrettyString(action));

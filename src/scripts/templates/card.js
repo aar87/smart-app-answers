@@ -60,7 +60,7 @@ function getButton(text, action) {
 	}
 }
 
-function getCardTemplate(items, buttonText, buttonAction) {
+function getCardTemplate(values, buttonText, buttonAction) {
 	var cells = [];
 
 	for (var i = 0; i < values.length; i++) {

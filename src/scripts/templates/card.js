@@ -33,14 +33,13 @@ function getButton(text, action) {
 	return {
 		"type": "button_cell_view",
 		"content": {
-			"text": "Купить",
+			"text": text,
 			"typeface": "button1",
 			"style": "default",
 			"type": "accept",
 			"actions": [
 				{
-					"type": "text",
-					"text": text,
+					"type": "deep_link",
 					"deep_link": action
 				}
 			],
@@ -70,6 +69,7 @@ function getCardTemplate(values, buttonText, buttonAction) {
 	if (buttonText || buttonAction) {
 		cells.push(getButton(buttonText, buttonAction));
 	}
+
 
 	return {
 		card: {

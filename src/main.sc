@@ -1,6 +1,7 @@
 require: scripts/scripts.js
 require: scripts/cards.js
 require: scripts/templates/list.js
+require: scripts/templates/card.js
 
 require: answers.yaml
   var = $Answers
@@ -42,6 +43,7 @@ theme: /
         buttons:
             "Как перезапустить устройство?" -> /DeviceReload
             "Как транслировать видео с телефона?" -> /VideoFromPhone
+            "Как транслировать экран телефона на ТВ?" -> /VideoFromPhoneOnTv
         script:
             if ($parseTree.value === "start") { $jsapi.startSession() };
             // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session
@@ -64,12 +66,25 @@ theme: /
             $reactions.transition("/Start")
 
     state: VideoFromPhone
-        q!: (как транслировать*|видео с телефона*|видео на телефоне*)
+        q!: (транслировать видео|видео с телефон*|видео на телефоне*)
         a: {{ $Content.VideoFromPhone.title }}
         script:
             var items = $Content.VideoFromPhone.details.items;
             $jsapi.log("VideoFromPhone -> " + toPrettyString(items));
             var template = getListTemplate(items);
+            $jsapi.log("VideoFromPhone -> " + toPrettyString(template));
+            reply(template);
+            $reactions.transition("/Start")
+
+    state: VideoFromPhoneOnTv
+        q!: (транслировать экран*|экран телефон*)
+        a: {{ $Content.VideoFromPhoneOnTv.title }}
+        script:
+            var items = $Content.VideoFromPhone.details.items;
+            var text = $Content.VideoFromPhone.details.button.text;
+            var action = $Content.VideoFromPhone.details.button.action;
+            $jsapi.log("VideoFromPhone -> " + toPrettyString(items));
+            var template = getCardTemplate(items, text, action);
             $jsapi.log("VideoFromPhone -> " + toPrettyString(template));
             reply(template);
             $reactions.transition("/Start")

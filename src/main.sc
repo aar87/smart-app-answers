@@ -84,8 +84,10 @@ theme: /
             var text = $Content.VideoFromPhone.details.button.text;
             var action = $Content.VideoFromPhone.details.button.action;
             $jsapi.log("VideoFromPhone -> " + toPrettyString(items));
+            $jsapi.log("VideoFromPhone -> " + toPrettyString(text));
+            $jsapi.log("VideoFromPhone -> " + toPrettyString(action));
             var template = getCardTemplate(items, text, action);
-            $jsapi.log("VideoFromPhone -> " + toPrettyString(template));
+            $jsapi.log("VideoFromPhoneOnTv -> " + toPrettyString(template));
             reply(template);
             $reactions.transition("/Start")
 

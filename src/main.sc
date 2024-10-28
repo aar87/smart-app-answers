@@ -77,7 +77,7 @@ theme: /
             $reactions.transition("/Start")
 
     state: VideoFromPhoneOnTv
-        q!: (Как транслировать экран телефона на ТВ?)
+        q!: (транслировать экран*)
         script:
             var items = $Content.VideoFromPhoneOnTv.details.items;
             var text = $Content.VideoFromPhoneOnTv.details.button.text;

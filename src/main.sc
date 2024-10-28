@@ -91,6 +91,45 @@ theme: /
             reply(template);
             $reactions.transition("/Start")
 
+    state: Channel
+        q!: (настроить эфир*|ТВ канал*)
+        a: {{ $Content.Channel.question }}
+        buttons:
+            "Эфирные" -> /Channel/Satellite
+            "Онлайн" -> /Channel/Online
+        script:
+            var items = $Content.Channel.details.items;
+            $jsapi.log("Channel -> " + toPrettyString(items));
+            var template = getListTemplate(items);
+            $jsapi.log("Channel -> " + toPrettyString(template));
+            reply(template);
+
+        state: Satellite
+            q!: (спутник*|кабельн*|эфир*)
+            a: {{ $Content.ChannelSettings.channel.title }}
+            script:
+                var items = $Content.ChannelSettings.channel.details.items;
+                var text = $Content.ChannelSettings.channel.details.button.text;
+                var action = $Content.ChannelSettings.channel.details.button.link;
+                $jsapi.log("Satellite -> " + toPrettyString(items));
+                var template = getCardTemplate(items, text, action);
+                $jsapi.log("Satellite -> " + toPrettyString(template));
+                reply(template);
+                $reactions.transition("/Start")
+
+        state: Online
+            q!: (онлайн*)
+            a: {{ $Content.ChannelSettings.online.title }}
+            script:
+                var items = $Content.ChannelSettings.online.details.items;
+                var text = $Content.ChannelSettings.online.details.button.text;
+                var action = $Content.ChannelSettings.online.details.button.link;
+                $jsapi.log("Online -> " + toPrettyString(items));
+                var template = getCardTemplate(items, text, action);
+                $jsapi.log("Online -> " + toPrettyString(template));
+                reply(template);
+                $reactions.transition("/Start")
+
     state: CatchAll || noContext=true
         q: *
         a: Я не понял вас

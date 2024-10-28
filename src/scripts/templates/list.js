@@ -30,6 +30,10 @@ function getCell(value, isLast) {
 					}
 				}
 			}
+		},
+		divider: {
+			"style": "default",
+			"size": "d5",
 		}
 	}
 

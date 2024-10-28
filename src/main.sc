@@ -78,6 +78,7 @@ theme: /
 
     state: VideoFromPhoneOnTv
         q!: (транслировать экран*)
+        a: {{ $Content.VideoFromPhoneOnTv.title }}
         script:
             var items = $Content.VideoFromPhoneOnTv.details.items;
             var text = $Content.VideoFromPhoneOnTv.details.button.text;

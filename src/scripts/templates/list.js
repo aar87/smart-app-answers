@@ -1,6 +1,6 @@
 var divider = {
-	"style": "default",
-	"size": "d5",
+	style: "default",
+	size: "d5",
 }
 
 function getCell(value, isLast) {
@@ -31,16 +31,11 @@ function getCell(value, isLast) {
 				}
 			}
 		},
-		divider: {
-			"style": "default",
-			"size": "d5",
-		}
 	}
 
-	// if (!isLast) {
-	preparedCell.divider = divider;
-	// }
-
+	if (!isLast) {
+		preparedCell.divider = divider;
+	}
 
 	return preparedCell;
 }
@@ -49,7 +44,7 @@ function getListTemplate(values) {
 	var cells = [];
 
 	for (var i = 0; i < values.length; i++) {
-		cells.push(getCell(values[i], i === values.length));
+		cells.push(getCell(values[i], i === values.length - 1));
 	}
 
 	return {

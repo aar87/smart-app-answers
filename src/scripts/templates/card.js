@@ -52,7 +52,7 @@ function getButton(text, action) {
 		},
 		"paddings": {
 			"left": "6x",
-			"top": "12x",
+			"top": "0x",
 			"right": "6x",
 			"bottom": "8x"
 		}

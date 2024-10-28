@@ -33,9 +33,9 @@ function getCell(value, isLast) {
 		}
 	}
 
-	if (!isLast) {
-		preparedCell.divider = divider;
-	}
+	// if (!isLast) {
+	preparedCell.divider = divider;
+	// }
 
 
 	return preparedCell;

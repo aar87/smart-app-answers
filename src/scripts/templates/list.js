@@ -45,7 +45,7 @@ function getListTemplate(values) {
 	var cells = [];
 
 	for (var i = 0; i < values.length; i++) {
-		cells.push(getCell(values[i], i === values.length - 1));
+		cells.push(getCell(values[i], i === values.length));
 	}
 
 	return {

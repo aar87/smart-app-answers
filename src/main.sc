@@ -44,6 +44,7 @@ theme: /
             "Как перезапустить устройство?" -> /DeviceReload
             "Как транслировать видео с телефона?" -> /VideoFromPhone
             "Как транслировать экран телефона на ТВ?" -> /VideoFromPhoneOnTv
+            "Как настроить ТВ каналы?" -> /Channel
         script:
             if ($parseTree.value === "start") { $jsapi.startSession() };
             // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session

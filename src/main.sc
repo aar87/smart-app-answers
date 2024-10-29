@@ -2,6 +2,7 @@ require: scripts/scripts.js
 require: scripts/cards.js
 require: scripts/templates/list.js
 require: scripts/templates/card.js
+require: scripts/templates/titleCard.js
 
 require: answers.yaml
   var = $Answers

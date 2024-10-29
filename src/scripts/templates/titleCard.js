@@ -50,9 +50,9 @@ function getTitleCardTemplate(values) {
 			cells.push(getText(values[i].data[j].key.text, values[i].data[j].key.color));
 		}
 
-		if (i !== values.length - 1) {
-			cells.push(divider)
-		}
+		// if (i !== values.length - 1) {
+		// 	cells.push(divider)
+		// }
 	}
 
 	return {

@@ -48,6 +48,7 @@ function getTitleCardTemplate(values) {
 
 		for (var j = 0; j < values[i].data.length; j++) {
 			cells.push(getText(values[i].data[j].key.text, values[i].data[j].key.color));
+			cells.push(getText(values[i].data[j].key.value, values[i].data[j].value.color));
 		}
 
 		// if (i !== values.length - 1) {

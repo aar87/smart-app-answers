@@ -1,5 +1,5 @@
 var divider = {
-	style: "secondary",
+	style: "default",
 	size: "d5",
 }
 

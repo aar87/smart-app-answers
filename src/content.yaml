@@ -73,28 +73,28 @@ SupportConnection:
     items:
       - type:
         title: В Telegram
-        contacts:
+        data:
           -
             key:
-              color: default
+              color: secondary
               text: Чат-бот со специалистом поддержки
             value:
-              color: white
+              color: default
               text: sberdevices_support_bot
       - type:
         title: По телефону
-        contacts:
+        data:
           -
             key:
-              color: white
+              color: default
               text: 900
             value:
-              color: default
+              color: secondary
               text: Бесплатно по России
           -
             key:
-              color: white
+              color: default
               text: '+7 495 500-55-50'
             value:
-              color: default
+              color: secondary
               text: из любой точки мира по тарифу вашего оператора связи

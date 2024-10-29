@@ -45,6 +45,7 @@ theme: /
             "Как транслировать видео с телефона?" -> /VideoFromPhone
             "Как транслировать экран телефона на ТВ?" -> /VideoFromPhoneOnTv
             "Как настроить ТВ каналы?" -> /Channel
+            "Как связаться с техподдержкой" -> /SupportConnection
         script:
             if ($parseTree.value === "start") { $jsapi.startSession() };
             // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session
@@ -130,6 +131,17 @@ theme: /
                 $jsapi.log("Online -> " + toPrettyString(template));
                 reply(template);
                 $reactions.transition("/Start")
+
+    state: SupportConnection
+        q!: (связаться с техпод*|техпод*)
+        a: {{ $Content.SupportConnection.title }}
+        script:
+            var items = $Content.SupportConnection.details.items;
+            $jsapi.log("SupportConnection -> " + toPrettyString(items));
+            var template = getTitleCardTemplate(items);
+            $jsapi.log("SupportConnection -> " + toPrettyString(template));
+            reply(template);
+            $reactions.transition("/Start")
 
     state: CatchAll || noContext=true
         q: *

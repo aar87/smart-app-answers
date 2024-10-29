@@ -21,7 +21,7 @@ function getTitle(value) {
 	}
 }
 
-function getText(value, color = "default") {
+function getText(value, color) {
 	return {
 		type: "text_cell_view",
 		content: {

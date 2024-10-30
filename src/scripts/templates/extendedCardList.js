@@ -1,7 +1,7 @@
 var leftPadding = "8x";
 var topPadding = "8x";
 var doubleTopPadding = "16x";
-var rigthPadding = "8x";
+var rightPadding = "8x";
 var bottomPadding = "8x";
 
 var textPadding = "6x";
@@ -14,7 +14,7 @@ function getExtendedCardList() {
 			"paddings": {
 				"left": leftPadding,
 				"top": topPadding,
-				"right": rigthPadding,
+				"right": rightPadding,
 				"bottom": bottomPadding
 			},
 			"cell_image": {

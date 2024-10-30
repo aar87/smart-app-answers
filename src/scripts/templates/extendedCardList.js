@@ -9,8 +9,8 @@ function getExtendedCardList() {
 				"bottom": "9x"
 		},
 		"cell_image": {
-			"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/Lass9S9cp9oUfxMY.png",
-				"hash": "c5cce2d6858da8878caa5b8fc4c9afa7",
+			"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/RQE47TcgVJJ3IW68.png",
+				"hash": "84fed454b566e2e89b304d74a62e4456",
 				"placeholder_color": "solid_black",
 				"actions": [
 				{ }

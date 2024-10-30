@@ -1,8 +1,8 @@
 var leftPadding = "8x";
-var topPadding = "8x";
+var topPadding = "4x";
+var bottomPadding = "4x";
 var doubleTopPadding = "16x";
 var rightPadding = "8x";
-var bottomPadding = "8x";
 
 var textPadding = "6x";
 

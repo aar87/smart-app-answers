@@ -4,8 +4,8 @@ var divider = {
 }
 
 function getCell(value, isFirst, isLast) {
-	var topPadding = "8x";
-	var bottomPadding = "8x";
+	var topPadding = "4x";
+	var bottomPadding = "4x";
 
 	if (isFirst) {
 		topPadding = "16x";

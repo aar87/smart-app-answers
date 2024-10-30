@@ -22,10 +22,10 @@ function getTitle(value) {
 }
 
 function getText(value, color, isOnEdge) {
-	var topPadding = "2x";
+	var topPadding = "4x";
 
 	if (isOnEdge) {
-		topPadding = "8x";
+		topPadding = "16x";
 	}
 
 	return {

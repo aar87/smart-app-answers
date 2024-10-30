@@ -3,7 +3,7 @@ function getCell(value, isFirst, isLast) {
 	var bottomPadding = "4x";
 
 	if (isFirst) {
-		topPadding = "8px";
+		topPadding = "8x";
 	}
 
 	if (isLast) {

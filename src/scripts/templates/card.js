@@ -3,11 +3,11 @@ function getCell(value, isFirst, isLast) {
 	var bottomPadding = "4x";
 
 	if (isFirst) {
-		topPadding = "16x";
+		topPadding = "8px";
 	}
 
 	if (isLast) {
-		bottomPadding = "16x";
+		bottomPadding = "8x";
 	}
 
 	return {

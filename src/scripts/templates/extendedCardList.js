@@ -3,74 +3,129 @@ function getExtendedCardList() {
 		"card": {
 			"type": "extended_list_card",
 				"paddings": {
-				"left": "9x",
-					"top": "9x",
-					"right": "9x",
-					"bottom": "9x"
+				"left": "16x",
+				"top": "16x",
+				"right": "16x",
+				"bottom": "16x"
 			},
 			"cell_image": {
 				"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/RQE47TcgVJJ3IW68.png",
 					"hash": "84fed454b566e2e89b304d74a62e4456",
 					"placeholder_color": "solid_black",
 					"actions": [
-					{ }
-				],
-				"fixed_ratio": "1:1",
-				"size": {
-					"height": "small",
-					"aspect_ratio": "1",
-				}
+						{ }
+					],
+				"fixed_ratio": "16:9",
 			},
 			"cells": [
 				{
 					"type": "text_cell_view",
 					"content": {
-						"text": "Киану Ривс",
+						"text": "В Telegram",
 						"typeface": "headline3",
 						"text_color": "default",
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "8x",
-						"top": "10x",
-						"right": "8x"
+						"top": "12px",
+						"bottom": "12px"
 					}
 				},
 				{
 					"type": "text_cell_view",
 					"content": {
-						"text": "Канадский актёр, кинопродюсер, и музыкант. Наиболее известен своими ролями в киносериях «Матрица» и «Джон Уик»...",
+						"text": "Чат-бот со специалистом поддержки",
+						"typeface": "body3",
+						"text_color": "secondary",
+						"max_lines": 0
+					},
+					"paddings": {
+						"top": "12px",
+						"bottom": "12px"
+					}
+				},
+				{
+					"type": "text_cell_view",
+					"content": {
+						"text": "sberdevices_support_bot",
+						"typeface": "body3",
+						"text_color": "default",
+						"max_lines": 0
+					},
+					"paddings": {
+						"top": "12px",
+						"bottom": "11px"
+					},
+					"divider": {
+						"style": "default",
+						"size": "d5"
+					}
+				},
+				{
+					"type": "text_cell_view",
+					"content": {
+						"text": "По телефону",
 						"typeface": "headline3",
 						"text_color": "default",
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "8x",
-						"top": "10x",
-						"right": "8x"
+						"top": "12px",
+						"bottom": "12px"
 					}
 				},
 				{
 					"type": "text_cell_view",
 					"content": {
-						"text": "ru.wikipedia.org",
-						"typeface": "headline3",
+						"text": "900",
+						"typeface": "body3",
 						"text_color": "default",
-						"max_lines": 0,
-						"actions": [
-							{
-								"type": "deep_link",
-								"deep_link": "https://ru.wikipedia.org"
-							}
-						],
-						"margins": {
-							"left": "10x",
-							"top": "5x",
-							"right": "10x",
-							"bottom": "5x"
-						}
+						"max_lines": 0
+					},
+					"paddings": {
+						"top": "12px",
+						"bottom": "12px"
 					}
-				}
+				},
+				{
+					"type": "text_cell_view",
+					"content": {
+						"text": "Бесплатно по России",
+						"typeface": "body3",
+						"text_color": "secondary",
+						"max_lines": 0
+					},
+					"paddings": {
+						"top": "12px",
+						"bottom": "12px"
+					}
+				},
+				{
+					"type": "text_cell_view",
+					"content": {
+						"text": "+ 7 495 500-55-50",
+						"typeface": "body3",
+						"text_color": "default",
+						"max_lines": 0
+					},
+					"paddings": {
+						"top": "12px",
+						"bottom": "12px"
+					}
+				},
+				{
+					"type": "text_cell_view",
+					"content": {
+						"text": "из любой точки мира по тарифу вашего оператора связи",
+						"typeface": "body3",
+						"text_color": "secondary",
+						"max_lines": 0
+					},
+					"paddings": {
+						"top": "12px",
+						"bottom": "12px"
+					}
+				},
 			]
 		}
 	}

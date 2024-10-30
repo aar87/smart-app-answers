@@ -18,12 +18,12 @@ function getExtendedCardList() {
 				"bottom": bottomPadding
 			},
 			"cell_image": {
-				"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/RQE47TcgVJJ3IW68.png",
-					"hash": "84fed454b566e2e89b304d74a62e4456",
-					"placeholder_color": "solid_black",
-					"actions": [
-						{ }
-					],
+				"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/7fkjkEYFpVYejTL0.png",
+				"hash": "4e25d930bb2fe6b75c43a803a3a1cf0b",
+				"placeholder_color": "solid_black",
+				"actions": [
+					{ }
+				],
 				"fixed_ratio": "1:1",
 				"height": "10",
 			},

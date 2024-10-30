@@ -32,7 +32,7 @@ function getCell(value, isFirst, isLast) {
 					typeface: "body1",
 					text_color: "secondary",
 					margins: {
-						"top": "0"
+						"top": "0x"
 					}
 				}
 			}

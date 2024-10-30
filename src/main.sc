@@ -3,6 +3,7 @@ require: scripts/cards.js
 require: scripts/templates/list.js
 require: scripts/templates/card.js
 require: scripts/templates/titleCard.js
+require: scripts/templates/extendedCardList.js
 
 require: answers.yaml
   var = $Answers
@@ -139,7 +140,7 @@ theme: /
         script:
             var items = $Content.SupportConnection.details.items;
             $jsapi.log("SupportConnection -> " + toPrettyString(items));
-            var template = getTitleCardTemplate(items);
+            var template = extendedCard;
             $jsapi.log("SupportConnection -> " + toPrettyString(template));
             reply(template);
             $reactions.transition("/Start")

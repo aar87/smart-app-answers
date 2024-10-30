@@ -96,8 +96,8 @@ function getCardTemplate(values, buttonText, buttonAction) {
 		card: {
 			type: "list_card",
 			paddings: {
-				bottom: "0",
-				top: "0"
+				bottom: "0x",
+				top: "0x"
 			},
 			cells: cells
 		}

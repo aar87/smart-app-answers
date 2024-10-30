@@ -140,7 +140,7 @@ theme: /
         script:
             var items = $Content.SupportConnection.details.items;
             $jsapi.log("SupportConnection -> " + toPrettyString(items));
-            var template = extendedCard;
+            var template = getExtendedCardList();
             $jsapi.log("SupportConnection -> " + toPrettyString(template));
             reply(template);
             $reactions.transition("/Start")

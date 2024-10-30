@@ -3,10 +3,10 @@ function getExtendedCardList() {
 		"card": {
 			"type": "extended_list_card",
 				"paddings": {
-					"left": "16px",
-					"top": "16px",
-					"right": "16px",
-					"bottom": "16px"
+					"left": "16x",
+					"top": "16x",
+					"right": "16x",
+					"bottom": "16x"
 				},
 			"cell_image": {
 				"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/RQE47TcgVJJ3IW68.png",
@@ -16,7 +16,7 @@ function getExtendedCardList() {
 						{ }
 					],
 				"fixed_ratio": "1:1",
-				"height": "80px",
+				"height": "80x",
 			},
 			"cells": [
 				{
@@ -28,8 +28,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"top": "12px",
-						"bottom": "12px"
+						"top": "12x",
+						"bottom": "12x"
 					}
 				},
 				{
@@ -41,8 +41,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"top": "12px",
-						"bottom": "12px"
+						"top": "12x",
+						"bottom": "12x"
 					}
 				},
 				{
@@ -54,8 +54,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"top": "12px",
-						"bottom": "11px"
+						"top": "12x",
+						"bottom": "11x"
 					},
 					"divider": {
 						"style": "default",
@@ -71,8 +71,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"top": "12px",
-						"bottom": "12px"
+						"top": "12x",
+						"bottom": "12x"
 					}
 				},
 				{
@@ -84,8 +84,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"top": "12px",
-						"bottom": "12px"
+						"top": "12x",
+						"bottom": "12x"
 					}
 				},
 				{
@@ -97,8 +97,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"top": "12px",
-						"bottom": "12px"
+						"top": "12x",
+						"bottom": "12x"
 					}
 				},
 				{
@@ -110,8 +110,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"top": "12px",
-						"bottom": "12px"
+						"top": "12x",
+						"bottom": "12x"
 					}
 				},
 				{
@@ -123,8 +123,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"top": "12px",
-						"bottom": "12px"
+						"top": "12x",
+						"bottom": "12x"
 					}
 				},
 			]

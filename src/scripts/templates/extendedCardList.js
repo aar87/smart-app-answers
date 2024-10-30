@@ -15,7 +15,8 @@ function getExtendedCardList() {
 				"actions": [
 				{ }
 			],
-				"fixed_ratio":"16:9"
+			"height": 72,
+				"fixed_ratio":"1:1"
 		},
 		"cells": [
 			{

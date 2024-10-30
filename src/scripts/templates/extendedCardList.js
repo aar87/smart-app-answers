@@ -3,11 +3,11 @@ function getExtendedCardList() {
 		"card": {
 			"type": "extended_list_card",
 				"paddings": {
-				"left": "16x",
-				"top": "16x",
-				"right": "16x",
-				"bottom": "16x"
-			},
+					"left": "16px",
+					"top": "16px",
+					"right": "16px",
+					"bottom": "16px"
+				},
 			"cell_image": {
 				"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/RQE47TcgVJJ3IW68.png",
 					"hash": "84fed454b566e2e89b304d74a62e4456",
@@ -15,7 +15,8 @@ function getExtendedCardList() {
 					"actions": [
 						{ }
 					],
-				"fixed_ratio": "16:9",
+				"fixed_ratio": "1:1",
+				"height": "80px",
 			},
 			"cells": [
 				{

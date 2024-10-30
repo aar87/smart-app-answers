@@ -1,5 +1,6 @@
 var leftPadding = "8x";
 var topPadding = "8x";
+var doubleTopPadding = "16x";
 var rigthPadding = "8x";
 var bottomPadding = "8x";
 
@@ -37,7 +38,7 @@ function getExtendedCardList() {
 					},
 					"paddings": {
 						"left": leftPadding,
-						"top": textPadding * 2,
+						"top": doubleTopPadding,
 						"bottom": textPadding,
 					}
 				},

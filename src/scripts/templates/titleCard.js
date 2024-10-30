@@ -14,14 +14,20 @@ function getTitle(value) {
 		},
 		paddings: {
 			left: "8x",
-			top: "10x",
-			bottom: "10x",
+			top: "8x",
+			bottom: "8x",
 			right: "8x"
 		}
 	}
 }
 
-function getText(value, color) {
+function getText(value, color, isOnEdge) {
+	var topPadding = "2x";
+
+	if (isOnEdge) {
+		topPadding = "8x";
+	}
+
 	return {
 		type: "text_cell_view",
 		content: {
@@ -32,7 +38,7 @@ function getText(value, color) {
 		},
 		paddings: {
 			"left": "8x",
-			"top": "2px",
+			"top": topPadding,
 			"right": "8x"
 		}
 	}
@@ -51,9 +57,9 @@ function getTitleCardTemplate(values) {
 			cells.push(getText(values[i].data[j].value.text, values[i].data[j].value.color));
 		}
 
-		// if (i !== values.length - 1) {
-		// 	cells.push(divider)
-		// }
+		if (i !== values.length - 1) {
+			cells.push(divider)
+		}
 	}
 
 	return {

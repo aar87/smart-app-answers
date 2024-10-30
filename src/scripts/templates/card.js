@@ -1,9 +1,20 @@
-function getCell(value) {
+function getCell(value, isFirst, isLast) {
+	var topPadding = "8x";
+	var bottomPadding = "8x";
+
+	if (isFirst) {
+		topPadding = "16x";
+	}
+
+	if (isLast) {
+		bottomPadding = "16x";
+	}
+
 	return {
 		type: "left_right_cell_view",
 		paddings: {
-			"top": "6x",
-			"bottom": "6x",
+			"top": topPadding,
+			"bottom": bottomPadding,
 			"left": "8x",
 			"right": "8x"
 		},
@@ -34,7 +45,7 @@ function getButton(text, action) {
 		"type": "button_cell_view",
 		"content": {
 			"text": text,
-			"typeface": "button1",
+			"typeface": "button2",
 			"style": "default",
 			"type": "accept",
 			"actions": [
@@ -44,16 +55,16 @@ function getButton(text, action) {
 				}
 			],
 			"margins": {
-				"left": "10x",
-				"top": "5x",
-				"right": "10x",
-				"bottom": "5x"
+				"left": "8p",
+				"top": "6x",
+				"right": "8x",
+				"bottom": "8x"
 			}
 		},
 		"paddings": {
-			"left": "6x",
-			"top": "0x",
-			"right": "6x",
+			"left": "8x",
+			"top": "6x",
+			"right": "8x",
 			"bottom": "8x"
 		}
 	}
@@ -63,13 +74,14 @@ function getCardTemplate(values, buttonText, buttonAction) {
 	var cells = [];
 
 	for (var i = 0; i < values.length; i++) {
-		cells.push(getCell(values[i], i === values.length - 1));
+		var isFirst = i === 0;
+		var isLast = !buttonText && i === values.length - 1;
+		cells.push(getCell(values[i], i === values.length - 1), isFirst, isLast);
 	}
 
 	if (buttonText || buttonAction) {
 		cells.push(getButton(buttonText, buttonAction));
 	}
-
 
 	return {
 		card: {

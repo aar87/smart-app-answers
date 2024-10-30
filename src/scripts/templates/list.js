@@ -3,12 +3,23 @@ var divider = {
 	size: "d5",
 }
 
-function getCell(value, isLast) {
+function getCell(value, isFirst, isLast) {
+	var topPadding = "8x";
+	var bottomPadding = "8x";
+
+	if (isFirst) {
+		topPadding = "16x";
+	}
+
+	if (isLast) {
+		bottomPadding = "16x";
+	}
+
 	var preparedCell= {
 		type: "left_right_cell_view",
 		paddings: {
-			"top": "6x",
-			"bottom": "6x",
+			"top": topPadding,
+			"bottom": bottomPadding,
 			"left": "8x",
 			"right": "8x"
 		},
@@ -44,7 +55,10 @@ function getListTemplate(values) {
 	var cells = [];
 
 	for (var i = 0; i < values.length; i++) {
-		cells.push(getCell(values[i], i === values.length - 1));
+		var isFirst = i === 0;
+		var isLast = i === values.length - 1;
+
+		cells.push(getCell(values[i], isFirst, isLast));
 	}
 
 	return {

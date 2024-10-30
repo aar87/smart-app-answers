@@ -46,7 +46,7 @@ function getExtendedCardList() {
 					"type": "text_cell_view",
 					"content": {
 						"text": "Чат-бот со специалистом поддержки",
-						"typeface": "body3",
+						"typeface": "footnote1",
 						"text_color": "secondary",
 						"max_lines": 0
 					},
@@ -60,7 +60,7 @@ function getExtendedCardList() {
 					"content": {
 						"left": leftPadding,
 						"text": "sberdevices_support_bot",
-						"typeface": "body3",
+						"typeface": "footnote1",
 						"text_color": "default",
 						"max_lines": 0
 					},
@@ -91,7 +91,7 @@ function getExtendedCardList() {
 					"type": "text_cell_view",
 					"content": {
 						"text": "900",
-						"typeface": "body3",
+						"typeface": "footnote1",
 						"text_color": "default",
 						"max_lines": 0
 					},
@@ -104,7 +104,7 @@ function getExtendedCardList() {
 					"type": "text_cell_view",
 					"content": {
 						"text": "Бесплатно по России",
-						"typeface": "body3",
+						"typeface": "footnote1",
 						"text_color": "secondary",
 						"max_lines": 0
 					},
@@ -117,7 +117,7 @@ function getExtendedCardList() {
 					"type": "text_cell_view",
 					"content": {
 						"text": "+ 7 495 500-55-50",
-						"typeface": "body3",
+						"typeface": "footnote1",
 						"text_color": "default",
 						"max_lines": 0
 					},
@@ -130,7 +130,7 @@ function getExtendedCardList() {
 					"type": "text_cell_view",
 					"content": {
 						"text": "из любой точки мира по тарифу вашего оператора связи",
-						"typeface": "body3",
+						"typeface": "footnote1",
 						"text_color": "secondary",
 						"max_lines": 0
 					},

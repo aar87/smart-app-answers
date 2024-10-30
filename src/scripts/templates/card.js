@@ -85,7 +85,7 @@ function getCardTemplate(values, buttonText, buttonAction) {
 			isFirst = true;
 		}
 
-		cells.push(getCell(values[i], i === values.length - 1, isFirst, isLast));
+		cells.push(getCell(values[i], isFirst, isLast));
 	}
 
 	if (buttonText || buttonAction) {

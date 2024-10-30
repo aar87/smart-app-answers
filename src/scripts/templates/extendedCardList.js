@@ -37,7 +37,7 @@ function getExtendedCardList() {
 					},
 					"paddings": {
 						"left": leftPadding,
-						"top": textPadding,
+						"top": textPadding * 2,
 						"bottom": textPadding,
 					}
 				},

@@ -136,7 +136,6 @@ function getExtendedCardList() {
 					},
 					"paddings": {
 						"left": leftPadding,
-						"bottom": textPadding
 					}
 				},
 			]

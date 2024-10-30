@@ -24,7 +24,7 @@ function getExtendedCardList() {
 					"type": "text_cell_view",
 					"content": {
 						"text": "Киану Ривс",
-						"typeface": "headline1",
+						"typeface": "headline3",
 						"text_color": "default",
 						"max_lines": 0
 					},

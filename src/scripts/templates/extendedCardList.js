@@ -18,8 +18,8 @@ function getExtendedCardList() {
 				"bottom": bottomPadding
 			},
 			"cell_image": {
-				"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/7fkjkEYFpVYejTL0.png",
-				"hash": "4e25d930bb2fe6b75c43a803a3a1cf0b",
+				"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/Fj7ZCsSNZXJkaSjT.png",
+				"hash": "1e3fb0081c93a397a85b347a1c2506d1",
 				"placeholder_color": "solid_black",
 				"actions": [
 					{ }

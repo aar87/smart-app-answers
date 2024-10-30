@@ -4,9 +4,9 @@ function getExtendedCardList() {
 			"type": "extended_list_card",
 			"paddings": {
 				"left": "16x",
-				"top": "16x",
-				"right": "16x",
-				"bottom": "16x"
+				"top": "16px",
+				"right": "16px",
+				"bottom": "16px"
 			},
 			"cell_image": {
 				"url": "https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/RQE47TcgVJJ3IW68.png",
@@ -16,7 +16,7 @@ function getExtendedCardList() {
 						{ }
 					],
 				"fixed_ratio": "1:1",
-				"height": "80x",
+				"height": "80px",
 			},
 			"cells": [
 				{
@@ -28,9 +28,9 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "16x",
-						"top": "12x",
-						"bottom": "12x"
+						"left": "16px",
+						"top": "12px",
+						"bottom": "12px"
 					}
 				},
 				{
@@ -42,23 +42,23 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "16x",
-						"top": "12x",
+						"left": "16px",
+						"top": "12px",
 					}
 				},
 				{
 					"type": "text_cell_view",
 					"content": {
-						"left": "16x",
+						"left": "16px",
 						"text": "sberdevices_support_bot",
 						"typeface": "body3",
 						"text_color": "default",
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "16x",
-						"top": "4",
-						"bottom": "11x"
+						"left": "16px",
+						"top": "4px",
+						"bottom": "11px"
 					},
 					"divider": {
 						"style": "default",
@@ -74,9 +74,9 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "16x",
-						"top": "12x",
-						"bottom": "12x"
+						"left": "16px",
+						"top": "12px",
+						"bottom": "12px"
 					}
 				},
 				{
@@ -88,8 +88,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "16x",
-						"top": "12x",
+						"left": "16px",
+						"top": "12px",
 					}
 				},
 				{
@@ -101,9 +101,9 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "16x",
-						"top": "4x",
-						"bottom": "12x"
+						"left": "16px",
+						"top": "4px",
+						"bottom": "12px"
 					}
 				},
 				{
@@ -115,8 +115,8 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "16x",
-						"top": "12x",
+						"left": "16px",
+						"top": "12px",
 					}
 				},
 				{
@@ -128,9 +128,9 @@ function getExtendedCardList() {
 						"max_lines": 0
 					},
 					"paddings": {
-						"left": "16x",
-						"top": "4x",
-						"bottom": "12x"
+						"left": "16px",
+						"top": "4px",
+						"bottom": "12px"
 					}
 				},
 			]

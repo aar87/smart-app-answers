@@ -32,7 +32,7 @@ function getCell(value, isFirst, isLast) {
 					typeface: "body1",
 					text_color: "secondary",
 					margins: {
-						"top": "0px"
+						"top": "0"
 					}
 				}
 			}
@@ -74,8 +74,17 @@ function getCardTemplate(values, buttonText, buttonAction) {
 	var cells = [];
 
 	for (var i = 0; i < values.length; i++) {
-		var isFirst = i === 0;
-		var isLast = !buttonText && i === values.length - 1;
+		var isFirst = false;
+		var isLast = false;
+
+		if (i === 0) {
+			isFirst = true;
+		}
+
+		if (!buttonText && i === values.length - 1) {
+			isFirst = true;
+		}
+
 		cells.push(getCell(values[i], i === values.length - 1), isFirst, isLast);
 	}
 
@@ -87,8 +96,8 @@ function getCardTemplate(values, buttonText, buttonAction) {
 		card: {
 			type: "list_card",
 			paddings: {
-				bottom: "0px",
-				top: "0px"
+				bottom: "0",
+				top: "0"
 			},
 			cells: cells
 		}

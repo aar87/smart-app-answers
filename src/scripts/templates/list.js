@@ -15,7 +15,7 @@ function getCell(value, isFirst, isLast) {
 		bottomPadding = "8x";
 	}
 
-	var preparedCell= {
+	return {
 		type: "left_right_cell_view",
 		paddings: {
 			"top": topPadding,
@@ -46,13 +46,7 @@ function getCell(value, isFirst, isLast) {
 			style: "default",
 			size: "d5"
 		}
-	}
-
-	if (isLast) {
-		delete preparedCell.divider
-	}
-
-	return preparedCell;
+	};
 }
 
 function getListTemplate(values) {

@@ -42,7 +42,7 @@ function getCell(value, isFirst, isLast) {
 	if (!isLast) {
 		data.divider = {
 			style: "default",
-			size: "d5"
+			size: "d1"
 		}
 	}
 

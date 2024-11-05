@@ -10,7 +10,7 @@ function getCell(value, isFirst, isLast) {
 		bottomPadding = "8x";
 	}
 
-	const data = {
+	var data = {
 		type: "left_right_cell_view",
 		paddings: {
 			"top": topPadding,

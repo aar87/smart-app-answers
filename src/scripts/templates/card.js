@@ -36,6 +36,10 @@ function getCell(value, isFirst, isLast) {
 					}
 				}
 			}
+		},
+		divider: {
+			style: "default",
+			size: "d5"
 		}
 	}
 }

@@ -1,8 +1,3 @@
-var divider = {
-	style: "default",
-	size: "d5"
-}
-
 function getCell(value, isFirst, isLast) {
 	var topPadding = "4x";
 	var bottomPadding = "4x";
@@ -37,7 +32,7 @@ function getCell(value, isFirst, isLast) {
 					typeface: "body1",
 					text_color: "secondary",
 					margins: {
-						"top": "0px"
+						"top": "0x"
 					}
 				}
 			}

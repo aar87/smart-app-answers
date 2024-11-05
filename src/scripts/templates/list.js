@@ -42,6 +42,7 @@ function getCell(value, isFirst, isLast) {
 				}
 			}
 		},
+		divider: divider
 	}
 
 	if (!isLast) {

@@ -15,6 +15,7 @@ function getCell(value, isFirst, isLast) {
 		paddings: {
 			"top": topPadding,
 			"bottom": bottomPadding,
+			"left": "8x",
 			"right": "8x"
 		},
 		left: {

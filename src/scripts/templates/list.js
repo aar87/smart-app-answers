@@ -1,6 +1,6 @@
 var divider = {
 	style: "default",
-	size: "d5",
+	size: "d5"
 }
 
 function getCell(value, isFirst, isLast) {
@@ -42,11 +42,14 @@ function getCell(value, isFirst, isLast) {
 				}
 			}
 		},
-		divider: divider
+		divider: {
+			style: "default",
+			size: "d5"
+		}
 	}
 
-	if (!isLast) {
-		preparedCell.divider = divider;
+	if (isLast) {
+		delete preparedCell.divider
 	}
 
 	return preparedCell;

@@ -10,12 +10,11 @@ function getCell(value, isFirst, isLast) {
 		bottomPadding = "8x";
 	}
 
-	return {
+	const data = {
 		type: "left_right_cell_view",
 		paddings: {
 			"top": topPadding,
 			"bottom": bottomPadding,
-			"left": "8x",
 			"right": "8x"
 		},
 		left: {
@@ -36,12 +35,17 @@ function getCell(value, isFirst, isLast) {
 					}
 				}
 			}
-		},
-		divider: {
+		}
+	};
+
+	if (!isLast) {
+		data.divider = {
 			style: "default",
 			size: "d5"
 		}
-	};
+	}
+
+	return data;
 }
 
 function getListTemplate(values) {

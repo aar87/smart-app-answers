@@ -21,6 +21,7 @@ init:
         }
     });
     bind("preProcess", function($context) {
+        $jsapi.log("Application version: " + $injector.version);
         $jsapi.log(">> pre >> " + $context.currentState);
 
         if (

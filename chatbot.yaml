@@ -28,3 +28,6 @@ scriptsPreLoad:
 tests:
   include:
     - test.xml
+
+injector:
+  version: '1.0.0'

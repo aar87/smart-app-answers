@@ -73,7 +73,7 @@ SupportConnection:
     image: 'https://content.sberdevices.ru/smartmarket-smide-prod/1334030/1248280/Fj7ZCsSNZXJkaSjT.png'
     hash: '1e3fb0081c93a397a85b347a1c2506d1'
     items:
-      - type:
+      -
         title: В Telegram
         typeFace: headline3
         color: default
@@ -82,19 +82,21 @@ SupportConnection:
           top: 16
           bottom: 6
         data:
-          - title: Чат-бот со специалистом поддержки
+          -
+            title: Чат-бот со специалистом поддержки
             typeFace: footnote1
             color: secondary
             paddings:
               left: 8
               top: 6
-          - title: sberdevices_support_bot
+          -
+            title: sberdevices_support_bot
             typeFace: footnote1
             color: default
             paddings:
               left: 8
               top: 6
-      - type:
+      -
         title: По телефону
         typeFace: headline3
         color: default
@@ -103,25 +105,29 @@ SupportConnection:
           top: 6
           bottom: 6
         data:
-          - title: 900
+          -
+            title: 900
             typeFace: footnote1
             color: default
             paddings:
               left: 8
               top: 6
-          - title: Бесплатно по России
+          -
+            title: Бесплатно по России
             typeFace: footnote1
             color: secondary
             paddings:
               left: 8
               bottom: 6
-          - title: '+ 7 495 500-55-50'
+          -
+            title: '+ 7 495 500-55-50'
             typeFace: footnote1
             color: default
             paddings:
               left: 8
               top: 6
-          - title: из любой точки мира по тарифу вашего оператора связи
+          -
+            title: из любой точки мира по тарифу вашего оператора связи
             typeFace: footnote1
             color: secondary
             paddings:

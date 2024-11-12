@@ -78,57 +78,57 @@ SupportConnection:
         typeface: headline3
         color: default
         paddings:
-          left: 8
-          top: 16
-          bottom: 6
+          left: 8x
+          top: 16x
+          bottom: 6x
         data:
           -
             title: Чат-бот со специалистом поддержки
             typeface: footnote1
             color: secondary
             paddings:
-              left: 8
-              top: 6
+              left: 8x
+              top: 6x
           -
             title: sberdevices_support_bot
             typeface: footnote1
             color: default
             paddings:
-              left: 8
-              top: 6
+              left: 8x
+              top: 6x
       -
         title: По телефону
         typeface: headline3
         color: default
         paddings:
-          left: 8
-          top: 6
-          bottom: 6
+          left: 8x
+          top: 6x
+          bottom: 6x
         data:
           -
             title: 900
             typeface: footnote1
             color: default
             paddings:
-              left: 8
-              top: 6
+              left: 8x
+              top: 6x
           -
             title: Бесплатно по России
             typeface: footnote1
             color: secondary
             paddings:
-              left: 8
-              bottom: 6
+              left: 8x
+              bottom: 6x
           -
             title: '+ 7 495 500-55-50'
             typeface: footnote1
             color: default
             paddings:
-              left: 8
-              top: 6
+              left: 8x
+              top: 6x
           -
             title: из любой точки мира по тарифу вашего оператора связи
             typeface: footnote1
             color: secondary
             paddings:
-              left: 8
+              left: 8x

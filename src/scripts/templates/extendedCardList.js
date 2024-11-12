@@ -5,36 +5,31 @@ var rightPadding = "8x";
 
 
 function getItemValues(item) {
-	var leftPadding = item.paddings.left ? item.paddings.left.toString() + 'x' : 0;
-	var rightPadding = item.paddings.right ? item.paddings.right.toString() + 'x': 0;
-	var topPadding = item.paddings.top ? item.paddings.top.toString() + 'x' : 0;
-	var bottomPadding = item.paddings.bottom ? item.paddings.bottom.toString() + 'x' : 0;
-
 	var result = {
 		title: item.title,
 		typeface: item.typeface,
 		color: item.color,
 		paddings: {
-			left: leftPadding,
-			right: rightPadding,
-			top: topPadding,
-			bottom: bottomPadding,
+			left: item.paddings.left,
+			right: item.paddings.right,
+			top: item.paddings.top,
+			bottom: item.paddings.bottom,
 		}
 	}
 
-	if (!leftPadding) {
+	if (!item.paddings.left) {
 		delete result.paddings.left
 	}
 
-	if (!rightPadding) {
+	if (!item.paddings.right) {
 		delete result.paddings.right
 	}
 
-	if (!topPadding) {
+	if (!item.paddings.top) {
 		delete result.paddings.top
 	}
 
-	if (!bottomPadding) {
+	if (!item.paddings.bottom) {
 		delete result.paddings.bottom
 	}
 

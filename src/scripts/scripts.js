@@ -1,3 +1,54 @@
+function getCell(value, isFirst, isLast) {
+    var topPadding = "4x";
+    var bottomPadding = "4x";
+
+    if (isFirst) {
+        topPadding = "8x";
+    }
+
+    if (isLast) {
+        bottomPadding = "8x";
+    }
+
+    var data = {
+        type: "left_right_cell_view",
+        paddings: {
+            "top": topPadding,
+            "bottom": bottomPadding,
+            "left": "8x",
+            "right": "8x"
+        },
+        left: {
+            type: "simple_left_view",
+            texts: {
+                title: {
+                    text: value,
+                    typeface: "footnote1",
+                    text_color: "secondary",
+                    max_lines: 0
+                },
+                subtitle: {
+                    text: "",
+                    typeface: "body1",
+                    text_color: "secondary",
+                    margins: {
+                        "top": "0x"
+                    }
+                }
+            }
+        }
+    };
+
+    if (!isLast) {
+        data.divider = {
+            style: "default",
+            size: "d3"
+        }
+    }
+
+    return data;
+}
+
 // проверка на режим тестирования
 function testMode() {
     if ($jsapi.context().testContext) {
@@ -6,19 +57,13 @@ function testMode() {
     return false;
 }
 
-// добавляем карточки (или другой reply) в response.replies
 function answerPush(reply) {
-    // если response.replies не существует - создаём пустой элемент массива:
     $jsapi.context().response.replies = $jsapi.context().response.replies || [];
-    // добавляем reply в ответ response.replies:
     $jsapi.context().response.replies.push(reply);
 }
 
-// узнаём, какой персонаж у клиента, чтобы выбирать правильные реплики
 function getCharacterId($request) {
-    // Информация о текущем персонаже ассистента: https://developer.sberdevices.ru/docs/ru/developer_tools/amp/smartappapi_description_and_guide#объект-character
     try {
-        // возможные результаты: sber, athena, joy
         return $request.rawRequest.payload.character.id;
     } catch (e) {
         if ($request.channelType === "chatwidget") {
@@ -32,7 +77,7 @@ function reply(data) {
     var reply = {
         "type": "raw",
         "body": {
-            "emotion": null,
+            "emotion": "zainteresovannost",
             "items": data,
         },
         "messageName": "ANSWER_TO_USER"

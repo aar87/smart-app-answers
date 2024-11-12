@@ -5,22 +5,40 @@ var rightPadding = "8x";
 
 
 function getItemValues(item) {
-	var leftPadding = item.paddings.left ? item.paddings.left : 0;
-	var rightPadding = item.paddings.right ? item.paddings.right : 0;
-	var topPadding = item.paddings.top ? item.paddings.top : 0;
-	var bottomPadding = item.paddings.bottom ? item.paddings.bottom : 0;
+	var leftPadding = item.paddings.left ? item.paddings.left + 'x' : 0;
+	var rightPadding = item.paddings.right ? item.paddings.right + 'x': 0;
+	var topPadding = item.paddings.top ? item.paddings.top + 'x' : 0;
+	var bottomPadding = item.paddings.bottom ? item.paddings.bottom + 'x' : 0;
 
-	return {
+	var result = {
 		title: item.title,
 		typeface: item.typeface,
 		color: item.color,
 		paddings: {
-			left: leftPadding.toString() + 'x',
-			right: rightPadding.toString() + 'x',
-			top: topPadding.toString() + 'x',
-			bottom: bottomPadding.toString() + 'x'
+			left: leftPadding,
+			right: rightPadding,
+			top: topPadding,
+			bottom: bottomPadding,
 		}
 	}
+
+	if (!leftPadding) {
+		delete result.paddings.left
+	}
+
+	if (!rightPadding) {
+		delete result.paddings.right
+	}
+
+	if (!topPadding) {
+		delete result.paddings.top
+	}
+
+	if (!bottomPadding) {
+		delete result.paddings.bottom
+	}
+
+	return result
 }
 
 function getTextCellView(item) {

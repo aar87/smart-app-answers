@@ -139,8 +139,10 @@ theme: /
         a: {{ $Content.SupportConnection.title }}
         script:
             var items = $Content.SupportConnection.details.items;
+            var image = $Content.SupportConnection.details.image;
+            var hash = $Content.SupportConnection.details.hash;
             $jsapi.log("SupportConnection -> " + toPrettyString(items));
-            var template = getExtendedCardList();
+            var template = getExtendedCellTitleView(items, image, hash);
             $jsapi.log("SupportConnection -> " + toPrettyString(template));
             reply(template);
             $reactions.transition("/Start")

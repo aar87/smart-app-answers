@@ -75,7 +75,7 @@ SupportConnection:
     items:
       -
         title: В Telegram
-        typeFace: headline3
+        typeface: headline3
         color: default
         paddings:
           left: 8
@@ -84,21 +84,21 @@ SupportConnection:
         data:
           -
             title: Чат-бот со специалистом поддержки
-            typeFace: footnote1
+            typeface: footnote1
             color: secondary
             paddings:
               left: 8
               top: 6
           -
             title: sberdevices_support_bot
-            typeFace: footnote1
+            typeface: footnote1
             color: default
             paddings:
               left: 8
               top: 6
       -
         title: По телефону
-        typeFace: headline3
+        typeface: headline3
         color: default
         paddings:
           left: 8
@@ -107,28 +107,28 @@ SupportConnection:
         data:
           -
             title: 900
-            typeFace: footnote1
+            typeface: footnote1
             color: default
             paddings:
               left: 8
               top: 6
           -
             title: Бесплатно по России
-            typeFace: footnote1
+            typeface: footnote1
             color: secondary
             paddings:
               left: 8
               bottom: 6
           -
             title: '+ 7 495 500-55-50'
-            typeFace: footnote1
+            typeface: footnote1
             color: default
             paddings:
               left: 8
               top: 6
           -
             title: из любой точки мира по тарифу вашего оператора связи
-            typeFace: footnote1
+            typeface: footnote1
             color: secondary
             paddings:
               left: 8

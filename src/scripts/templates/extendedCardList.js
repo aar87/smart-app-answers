@@ -5,10 +5,10 @@ var rightPadding = "8x";
 
 
 function getItemValues(item) {
-	var leftPadding = item.paddings.left ? item.paddings.left + 'x' : 0;
-	var rightPadding = item.paddings.right ? item.paddings.right + 'x': 0;
-	var topPadding = item.paddings.top ? item.paddings.top + 'x' : 0;
-	var bottomPadding = item.paddings.bottom ? item.paddings.bottom + 'x' : 0;
+	var leftPadding = item.paddings.left ? item.paddings.left.toString() + 'x' : 0;
+	var rightPadding = item.paddings.right ? item.paddings.right.toString() + 'x': 0;
+	var topPadding = item.paddings.top ? item.paddings.top.toString() + 'x' : 0;
+	var bottomPadding = item.paddings.bottom ? item.paddings.bottom.toString() + 'x' : 0;
 
 	var result = {
 		title: item.title,

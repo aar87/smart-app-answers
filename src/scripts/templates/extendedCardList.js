@@ -27,7 +27,7 @@ function getTextCellView(item) {
 	return {
 		type: "text_cell_view",
 		content: {
-			text: item.text.title,
+			text: item.title,
 			typeface: item.typeface,
 			text_color: item.color,
 			max_lines: 0
@@ -40,7 +40,6 @@ function getExtendedCellTitleView(values, image, hash) {
 	var cells = [];
 
 	for (var i = 0; i < values.length; i++) {
-		$jsapi.log("Values -> -> " + values[i]);
 		var titleValue = getItemValues(values[i]);
 		cells.push(getTextCellView(titleValue));
 

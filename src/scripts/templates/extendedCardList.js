@@ -15,10 +15,10 @@ function getItemValues(item) {
 		typeface: item.typeface,
 		color: item.color,
 		paddings: {
-			left: leftPadding + 'x',
-			right: rightPadding + 'x',
-			top: topPadding + 'x',
-			bottom: bottomPadding + 'x'
+			left: leftPadding.toString() + 'x',
+			right: rightPadding.toString() + 'x',
+			top: topPadding.toString() + 'x',
+			bottom: bottomPadding.toString() + 'x'
 		}
 	}
 }
@@ -44,7 +44,6 @@ function getExtendedCellTitleView(values, image, hash) {
 		cells.push(getTextCellView(titleValue));
 
 		for (var j = 0; j < values[i].data.length; j++) {
-
 			cells.push(getTextCellView(values[i].data[j]));
 		}
 	}

@@ -77,7 +77,9 @@ function reply(data) {
     var reply = {
         "type": "raw",
         "body": {
-            "emotion": "zainteresovannost",
+            "emotion": {
+                "emotionId": "zainteresovannost"
+            },
             "items": data,
         },
         "messageName": "ANSWER_TO_USER"

@@ -40,6 +40,7 @@ function getExtendedCellTitleView(values, image, hash) {
 	var cells = [];
 
 	for (var i = 0; i < values.length; i++) {
+		$jsapi.log("Values -> -> " + values[i]);
 		var titleValue = getItemValues(values[i]);
 		cells.push(getTextCellView(titleValue));
 

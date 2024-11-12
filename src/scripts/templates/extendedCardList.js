@@ -45,7 +45,7 @@ function getExtendedCellTitleView(values, image, hash) {
 
 		for (var j = 0; j < values[i].data.length; j++) {
 
-			cells.push(getTextCellView())
+			cells.push(getTextCellView(values[i].data[j]));
 		}
 	}
 

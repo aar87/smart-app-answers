@@ -52,7 +52,7 @@ theme: /
             $jsapi.log("context -> \n" + toPrettyString($Content));
             var intentState = getTargetIntent($request);
 
-            $jsapi.log("Intent state -> ", intentState);
+            $jsapi.log("Intent state -> " + intentState);
             $reactions.transition("/" + intentState);
 
     state: DeviceReload

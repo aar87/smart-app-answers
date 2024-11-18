@@ -102,7 +102,7 @@ function getTargetIntent($request) {
         $jsapi.log("Init getTargetIntent with payload: " + toPrettyString($request.rawRequest.payload));
 
         // TODO из request получить нужное
-        var intentKeyToSearch = keyVideoFromPhone
+        var intentKeyToSearch = keyChannel;
 
         return states[intentKeyToSearch];
     } catch (e) {

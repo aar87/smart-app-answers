@@ -42,12 +42,6 @@ theme: /
 
     state: Start
         q!: *
-        buttons:
-            "Как перезапустить устройство?" -> /DeviceReload
-            "Как транслировать видео с телефона?" -> /VideoFromPhone
-            "Как транслировать экран телефона на ТВ?" -> /VideoFromPhoneOnTv
-            "Как настроить ТВ каналы?" -> /Channel
-            "Как связаться с техподдержкой" -> /SupportConnection
         script:
             if ($parseTree.value === "start") { $jsapi.startSession() };
             // Переменные JS API – $session: https://developer.sberdevices.ru/docs/ru/developer_tools/ide/JS_API/variables/session
@@ -56,7 +50,10 @@ theme: /
             $jsapi.log("injector -> \n" + toPrettyString($injector));
             $jsapi.log("context -> \n" + toPrettyString($context));
             $jsapi.log("context -> \n" + toPrettyString($Content));
-            $jsapi.log("ReloadStateInit");
+            var intentState = getTargetIntent($request)
+
+            $jsapi.log("Intent state -> ", intentState);
+            $reactions.transition("/" + intentState);
 
     state: DeviceReload
         q!: (как перезагру*|перезагруз*|перезапус*)
@@ -67,7 +64,6 @@ theme: /
             var template = getListTemplate(items);
             $jsapi.log("DeviceReload -> " + toPrettyString(template));
             reply(template);
-            $reactions.transition("/Start")
 
     state: VideoFromPhone
         q!: (транслировать видео|видео с телефон*|видео на телефоне*)
@@ -78,7 +74,6 @@ theme: /
             var template = getListTemplate(items);
             $jsapi.log("VideoFromPhone -> " + toPrettyString(template));
             reply(template);
-            $reactions.transition("/Start")
 
     state: VideoFromPhoneOnTv
         q!: (транслировать экран*)
@@ -93,7 +88,6 @@ theme: /
             var template = getCardTemplate(items, text, action);
             $jsapi.log("VideoFromPhoneOnTv -> " + toPrettyString(template));
             reply(template);
-            $reactions.transition("/Start")
 
     state: Channel
         q!: (настроить эфир*|ТВ канал*)
@@ -119,7 +113,6 @@ theme: /
                 var template = getCardTemplate(items, text, action);
                 $jsapi.log("Satellite -> " + toPrettyString(template));
                 reply(template);
-                $reactions.transition("/Start")
 
         state: Online
             q!: (онлайн*)
@@ -132,7 +125,6 @@ theme: /
                 var template = getCardTemplate(items, text, action);
                 $jsapi.log("Online -> " + toPrettyString(template));
                 reply(template);
-                $reactions.transition("/Start")
 
     state: SupportConnection
         q!: (связаться с техпод*|техпод*)
@@ -145,7 +137,6 @@ theme: /
             var template = getExtendedCellTitleView(items, image, hash);
             $jsapi.log("SupportConnection -> " + toPrettyString(template));
             reply(template);
-            $reactions.transition("/Start")
 
     state: CatchAll || noContext=true
         q: *

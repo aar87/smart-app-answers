@@ -73,6 +73,44 @@ function getCharacterId($request) {
     }
 }
 
+// Тут определяем код, который должен направить нас в нужный state
+function getTargetIntent(request) {
+    // Значения state для переходов
+    var keyDeviceReload = "device_reload";
+    var deviceReload = "DeviceReload";
+
+    var keyVideoFromPhone = "video_from_phone";
+    var videoFromPhone = "VideoFromPhone";
+
+    var keyVideoOnTv = "video_on_tv";
+    var videoOnTv = "VideoFromPhoneOnTv";
+
+    var keyChannel = "key_channel";
+    var channel = "Channel";
+
+    var keySupport = "key_support";
+    var support = "SupportConnection";
+
+    var states = {}
+    states[keyDeviceReload] = deviceReload;
+    states[keyVideoFromPhone] = videoFromPhone;
+    states[keyVideoOnTv] = videoOnTv;
+    states[keyChannel] = channel;
+    states[keySupport] = support;
+
+    try {
+        $jsapi.log("Init getTargetIntent with payload: " + toPrettyString(request.rawRequest.payload));
+
+        // TODO из request получить нужное
+        var intentKeyToSearch = keyVideoFromPhone
+
+        return states[intentKeyToSearch];
+    } catch (e) {
+
+        return "Undefined"
+    }
+}
+
 function reply(data) {
     var reply = {
         "type": "raw",

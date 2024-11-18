@@ -50,7 +50,7 @@ theme: /
             $jsapi.log("injector -> \n" + toPrettyString($injector));
             $jsapi.log("context -> \n" + toPrettyString($context));
             $jsapi.log("context -> \n" + toPrettyString($Content));
-            var intentState = getTargetIntent($request)
+            var intentState = getTargetIntent($request);
 
             $jsapi.log("Intent state -> ", intentState);
             $reactions.transition("/" + intentState);

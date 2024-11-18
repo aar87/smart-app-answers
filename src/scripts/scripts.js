@@ -74,7 +74,7 @@ function getCharacterId($request) {
 }
 
 // Тут определяем код, который должен направить нас в нужный state
-function getTargetIntent(request) {
+function getTargetIntent($request) {
     // Значения state для переходов
     var keyDeviceReload = "device_reload";
     var deviceReload = "DeviceReload";
@@ -99,7 +99,7 @@ function getTargetIntent(request) {
     states[keySupport] = support;
 
     try {
-        $jsapi.log("Init getTargetIntent with payload: " + toPrettyString(request.rawRequest.payload));
+        $jsapi.log("Init getTargetIntent with payload: " + toPrettyString($request.rawRequest.payload));
 
         // TODO из request получить нужное
         var intentKeyToSearch = keyVideoFromPhone
